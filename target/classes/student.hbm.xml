@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="co.ramirolynch.hibernate_proj.entity.Student"
+		table="student">
+		<id name="studentId" column="studid">
+			<!-- <generator class="assigned"/> -->
+			<generator class="increment"/>
+		</id>
+		
+		<property name="studentName" column="sname"></property>
+		<property name="studentEmail" column="email"></property>
+
+	</class>
+
+</hibernate-mapping>
