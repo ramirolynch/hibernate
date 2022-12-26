@@ -61,7 +61,7 @@ public class StudentMarksCrud {
 		tx = session.beginTransaction();
 		String hql = "from StudentMarks";
 	
-		Query query = session.createQuery(hql);
+		Query <StudentMarks>query = session.createQuery(hql, StudentMarks.class);
 		List<StudentMarks> rows = query.list();    
 		
 		for(StudentMarks sm:rows) {
@@ -74,7 +74,7 @@ public class StudentMarksCrud {
 		
 		//display all records from the table
 		tx = session.beginTransaction();
-		query = session.createQuery(hql);
+		query = session.createQuery(hql, StudentMarks.class);
 		rows = query.list(); 
 		for(StudentMarks sm:rows) {
 			System.out.println(sm.toString());
