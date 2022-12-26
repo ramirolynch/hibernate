@@ -34,9 +34,6 @@ public class UpdateStudent {
 		else {
 			System.out.println("no matching student found");
 		}
-		
-		
-		
 		tx.commit();
 		
 		session.close();

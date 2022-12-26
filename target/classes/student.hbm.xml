@@ -11,5 +11,16 @@
 		<property name="studentEmail" column="email"></property>
 
 	</class>
+	<class name="co.ramirolynch.hibernate_proj.entity.StudentMarks"
+		table="student_marks">
+		<id name="studentId" column="studid">
+			<!-- <generator class="assigned"/> -->
+			<generator class="increment"/>
+		</id>
+		
+		<property name="studentName" column="sname"></property>
+		<property name="studentScores" column="marks"></property>
+
+	</class>
 
 </hibernate-mapping>
