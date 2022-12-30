@@ -2,6 +2,7 @@
 <hibernate-mapping>
 	<class name="co.ramirolynch.hibernate_proj.entity.Student"
 		table="student">
+		<cache usage="read-only"/>
 		<id name="studentId" column="studid">
 			<!-- <generator class="assigned"/> -->
 			<generator class="increment"/>
